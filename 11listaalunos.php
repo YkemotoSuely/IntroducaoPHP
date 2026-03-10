@@ -8,15 +8,22 @@
 
 //criar conexão
 
-$conexao = new mysqli($servidor, $usuario, $senha, $banco);
+    $conexao = new mysqli($servidor, $usuario, $senha, $banco);
 
-if($conexao ->connect_error){
-    die ('Erro na conexão');
-}
-//echo 'Conexão realizada com sucesso!';
+    if($conexao ->connect_error){
+     die ('Erro na conexão');
+    }
 
-$sql = "SELECT id, nome, idade, uf, cidade FROM alunos";
-$resultado = $conexao->query($sql);
+  // Caminho da imagem no servidor
+  $imagem = "pasta_imagens/relatorio.png";
+  
+  // Exibindo no HTML
+  echo "<h1>Relatório</h1>";
+  echo "<img src='" . $imagem . "' alt='Relatório PNG' />";
+
+
+    $sql = "SELECT id, nome, idade, uf, cidade FROM alunos";
+    $resultado = $conexao->query($sql);
 
     if ($resultado->num_rows > 0){
         while ($linha = $resultado->fetch_assoc()) 
