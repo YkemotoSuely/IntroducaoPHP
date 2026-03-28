@@ -1,9 +1,9 @@
 <?php
-         $endereco = ['cep'=> "17.519-010",
-                    'rua' => "Rua Marrey Júnior",
-                    'bairro' => "Fragata",
-                    'cidade' => "Marília",
-                    'uf' => "SP"
+         $endereco = ['Cep'=> "17.519-010",
+                    'Rua' => "Rua Marrey Júnior",
+                    'Bairro' => "Fragata",
+                    'Cidade' => "Marília",
+                    'Uf' => "SP"
          ]
 
 ?>
@@ -20,14 +20,17 @@
     <body>
         <?php
 
-            
-        echo "CEP: " . $endereco['cep']
-        . " - Rua: " . $endereco['rua']
-        . " - Bairro: " . $endereco['bairro']
-        . " - Cidade: " . $endereco['cidade']
-        . " - UF: " . $endereco['uf'];
-
+        foreach($endereco as $chave => $valor){
+            echo $chave . ": ". $valor . "<br>";
+        }
         
+            
+        // echo "CEP: " . $endereco['cep']
+        // . " - Rua: " . $endereco['rua']
+        // . " - Bairro: " . $endereco['bairro']
+        // . " - Cidade: " . $endereco['cidade']
+        // . " - UF: " . $endereco['uf'];
+
         ?>
     </body>
     
