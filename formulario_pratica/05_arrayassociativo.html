@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Endereço</title>
+</head>
+<body>
+    <h2>Informe seu Endereço</h2>
+    <form action="05_arrayassociativo.php" method="POST">
+        <label>CEP:</label><br>
+        <input type="text" name="txt_cep" placeholder="00.000-000" required><br><br>
+
+        <label>Rua:</label><br>
+        <input type="text" name="txt_rua" required><br><br>
+
+        <label>Bairro:</label><br>
+        <input type="text" name="txt_bairro" required><br><br>
+
+        <label>Cidade:</label><br>
+        <input type="text" name="txt_cidade" required><br><br>
+
+        <label>UF:</label><br>
+        <input type="text" name="txt_uf" maxlength="2" required><br><br>
+
+        <button type="submit" name="btn_enviar">Cadastrar Endereço</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <title>Registro de Ponto</title>
+</head>
+<body>
+    <h2>Cálculo de Jornada de Trabalho</h2>
+    
+    <form action="03_calculohoras.php" method="POST">
+        
+        <label>Entrada:</label>
+        <input type="time" name="hora_entrada" required><br><br>
+
+        <label>Saída:</label>
+        <input type="time" name="hora_saida" required><br><br>
+
+        <label>Intervalo (Almoço):</label>
+        <input type="time" name="hora_almoco" value="01:00" required><br><br>
+
+        <button type="submit" name="btn_calcular">Calcular Horas</button>
+    </form>
+</body>
+</html>
