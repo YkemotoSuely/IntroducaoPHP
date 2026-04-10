@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produtos - Loja</title>
+</head>
+<body>
+    <h2>Cadastrar Produto na Loja</h2>
+    
+    <form action="08_cadastrarproduto.php" method="POST">
+        <label>Nome do Produto:</label><br>
+        <input type="text" name="nome_prod" required placeholder="Ex: Bermuda"><br><br>
+
+        <label>Preço Unitário (R$):</label><br>
+        <input type="number" name="preco_prod" step="0.01" required placeholder="0.00"><br><br>
+
+        <label>Quantidade em Estoque:</label><br>
+        <input type="number" name="estoque_prod" required placeholder="Ex: 15"><br><br>
+
+        <button type="submit" name="btn_enviar">Salvar Produto</button>
+    </form>
+    <hr>
+    <a href="listar_produtos.php">Ver produtos cadastrados</a>
+</body>
+</html>
